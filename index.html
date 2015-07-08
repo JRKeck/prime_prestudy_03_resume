@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -9,12 +9,25 @@
 <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Arvo:400,700|Droid+Sans'>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <!-- Custom CSS -->
 <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 
 <body>
-<div class="container">
+<div class="cover">
+	<div class="card col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-4">
+		<div class="avatar"></div>
+		<h2>Josh Keck</h2>
+		<button type="button" class="btn btn-info card-btn-open">View Resume</button>
+	</div>
+</div>
+<div class="resume resume-hide">
+	<div class="container">
+	<button class="card-btn-close">
+		<i class="fa fa-times fa-2x"></i>
+	</button>
 	<header>
     	<h1>Josh Keck</h1>
         <div class="col-sm-3 contact-info">
@@ -53,7 +66,7 @@
             </ul>
         </div>
     </section>
-    <section id="experience">
+    <section class="experience">
     	<div class="col-sm-4">
         <h2>Work Experience</h2>
         </div>
@@ -80,7 +93,7 @@
 	        <p>Prospected new accounts within Minneapolis metro area. </p>
         </div>
     </section>
-    <section id="education">
+    <section class="education">
     	<div class="col-sm-4">
         <h2>Education</h2>
         </div>
@@ -92,9 +105,12 @@
         </div>
     </section>
 </div>
+</div>
 <!-- jQuery  -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <!-- Latest compiled and minified Bootstrap JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<!-- Custom Script -->
+<script src="js/script.js"></script>
 </body>
 </html>
